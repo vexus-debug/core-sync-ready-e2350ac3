@@ -28,7 +28,6 @@ const Footer = () => {
           <div className="space-y-3">
             <h4 className="text-sm font-semibold uppercase tracking-wider text-background/50">Product</h4>
             <div className="flex flex-col gap-2">
-              <Link to="/features" className="text-sm text-background/70 transition-colors hover:text-background">Features</Link>
               <Link to="/industries" className="text-sm text-background/70 transition-colors hover:text-background">Industries</Link>
             </div>
           </div>

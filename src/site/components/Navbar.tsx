@@ -8,15 +8,13 @@ import clinexusLogoWhite from "@/assets/site/clinexus-logo-white.png";
 
 const navLinks = [
   { label: "Home", to: "/" },
-  { label: "Features", to: "/features" },
-  { label: "Demo", to: "/demo" },
   { label: "Industries", to: "/industries" },
   { label: "About", to: "/about" },
   { label: "Contact", to: "/contact" },
 ];
 
 const isDark = (pathname: string) =>
-  ["/", "/features", "/about", "/contact", "/industries", "/demo"].includes(pathname);
+  ["/", "/about", "/contact", "/industries"].includes(pathname);
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
