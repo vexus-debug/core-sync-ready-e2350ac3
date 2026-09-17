@@ -15,7 +15,6 @@ import Signup from "./pages/Signup";
 import SelectClinic from "./pages/SelectClinic";
 import NotFound from "./pages/NotFound";
 import SiteIndex from "./site/pages/Index";
-import SiteFeatures from "./site/pages/Features";
 import SiteIndustries from "./site/pages/Industries";
 import SiteEyeClinics from "./site/pages/EyeClinics";
 import SiteEyeClinicFeatures from "./site/pages/EyeClinicFeatures";
@@ -23,7 +22,6 @@ import SiteAbout from "./site/pages/About";
 import SiteContact from "./site/pages/Contact";
 import SitePrivacy from "./site/pages/Privacy";
 import SiteTerms from "./site/pages/Terms";
-import SiteDemo from "./site/pages/Demo";
 import SiteScrollToTop from "./site/components/ScrollToTop";
 import { MaintenanceGate } from "@/components/MaintenanceGate";
 
@@ -179,7 +177,7 @@ const App = () => (
           <Routes>
             {/* Public marketing site */}
             <Route path="/" element={<SiteIndex />} />
-            <Route path="/features" element={<SiteFeatures />} />
+            <Route path="/features" element={<Navigate to="/industries/eye-clinics/features" replace />} />
             <Route path="/industries" element={<SiteIndustries />} />
             <Route path="/industries/eye-clinics" element={<SiteEyeClinics />} />
             <Route path="/industries/eye-clinics/features" element={<SiteEyeClinicFeatures />} />
@@ -187,7 +185,7 @@ const App = () => (
             <Route path="/contact" element={<SiteContact />} />
             <Route path="/privacy" element={<SitePrivacy />} />
             <Route path="/terms" element={<SiteTerms />} />
-            <Route path="/demo" element={<SiteDemo />} />
+            <Route path="/demo" element={<Navigate to="/signup" replace />} />
 
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<Signup />} />
