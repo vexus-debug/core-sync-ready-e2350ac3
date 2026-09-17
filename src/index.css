@@ -439,35 +439,72 @@
   transition: all 0.3s cubic-bezier(0.32, 0.72, 0, 1);
 }
 
-/* ── Public marketing site theme (scoped) ── */
+/* ── Public marketing site theme (scoped) ──
+   The public site follows the eye-clinics page: deep ink, electric teal,
+   quiet borders, and translucent surfaces. Fonts remain owned by each page. */
 .site-theme {
-  --background: 0 0% 100%;
-  --foreground: 214 54% 11%;
-  --card: 0 0% 100%;
-  --card-foreground: 214 54% 11%;
-  --popover: 0 0% 100%;
-  --popover-foreground: 214 54% 11%;
-  --primary: 184 73% 30%;
-  --primary-foreground: 0 0% 100%;
-  --secondary: 184 30% 95%;
-  --secondary-foreground: 184 73% 30%;
-  --muted: 207 20% 95%;
-  --muted-foreground: 207 20% 46%;
-  --accent: 207 47% 21%;
-  --accent-foreground: 0 0% 100%;
+  --background: 197 43% 6%;
+  --foreground: 168 21% 94%;
+  --card: 186 51% 12%;
+  --card-foreground: 168 21% 94%;
+  --popover: 186 51% 12%;
+  --popover-foreground: 168 21% 94%;
+  --primary: 172 84% 39%;
+  --primary-foreground: 197 43% 6%;
+  --secondary: 186 51% 12%;
+  --secondary-foreground: 168 21% 94%;
+  --muted: 186 51% 12%;
+  --muted-foreground: 168 12% 70%;
+  --accent: 172 84% 39%;
+  --accent-foreground: 197 43% 6%;
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 100%;
-  --border: 207 20% 88%;
-  --input: 207 20% 88%;
-  --ring: 184 73% 30%;
-  --radius: 0.75rem;
-  --medical-blue: 184 73% 30%;
-  --medical-blue-light: 184 40% 94%;
-  --medical-blue-dark: 214 54% 11%;
-  --medical-navy: 214 54% 11%;
-  --medical-teal: 184 73% 30%;
+  --border: 172 84% 39%;
+  --input: 172 84% 39%;
+  --ring: 172 84% 39%;
+  --radius: 1.5rem;
+  --medical-blue: 172 84% 39%;
+  --medical-blue-light: 168 21% 94%;
+  --medical-blue-dark: 197 43% 6%;
+  --medical-navy: 197 43% 6%;
+  --medical-teal: 172 84% 39%;
   background-color: hsl(var(--background));
   color: hsl(var(--foreground));
+}
+
+.site-theme [class*="bg-card"] {
+  border-color: hsl(var(--primary) / 0.2);
+  background-color: hsl(var(--card) / 0.72);
+  box-shadow: 0 20px 45px -28px hsl(var(--primary) / 0.42);
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
+}
+
+.site-theme [class*="border-border"] {
+  border-color: hsl(var(--primary) / 0.2);
+}
+
+.site-theme [class*="bg-muted"] {
+  background-color: hsl(var(--muted) / 0.58);
+}
+
+.site-theme .site-glass {
+  border: 1px solid hsl(var(--primary) / 0.2);
+  background-color: hsl(var(--card) / 0.64);
+  box-shadow: 0 20px 45px -28px hsl(var(--primary) / 0.42);
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-theme *,
+  .site-theme *::before,
+  .site-theme *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 /* ── Eye clinics sales page theme (scoped) ── */
