@@ -14,7 +14,16 @@ const navLinks = [
 ];
 
 const isDark = (pathname: string) =>
-  ["/", "/about", "/contact", "/industries"].includes(pathname);
+  [
+    "/",
+    "/about",
+    "/contact",
+    "/industries",
+    "/privacy",
+    "/terms",
+    "/industries/eye-clinics",
+    "/industries/eye-clinics/features",
+  ].includes(pathname);
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
