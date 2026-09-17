@@ -76,7 +76,7 @@ const DashboardShowcaseSection = () => {
           viewport={{ once: true }}
           className="mt-10 text-center"
         >
-          <Link to="/demo">
+          <Link to="/signup">
             <Button size="lg" className="gap-2 rounded-full bg-gradient-to-r from-[hsl(var(--primary))] to-[hsl(var(--medical-teal))] text-white shadow-lg shadow-primary/30 hover:opacity-90">
               Take the Full Tour <ArrowRight className="h-4 w-4" />
             </Button>

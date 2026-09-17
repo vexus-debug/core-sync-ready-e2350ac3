@@ -54,7 +54,7 @@ const SolutionSection = () => {
             <p className="mb-8 max-w-md text-base leading-relaxed text-muted-foreground">
               Most clinic owners lose 3–4 hours a day to admin — chasing payments, fixing records, counting stock, managing staff. That's time stolen from patients, from growth, from your family. Clinexus hands it back.
             </p>
-            <Link to="/features">
+            <Link to="/industries/eye-clinics/features">
               <Button className="gap-2 rounded-full bg-gradient-to-r from-[hsl(var(--primary))] to-[hsl(var(--medical-teal))] px-8 text-white shadow-md hover:opacity-90">
                 See How We Do It <ArrowRight className="h-4 w-4" />
               </Button>

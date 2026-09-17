@@ -99,7 +99,7 @@ const FeaturesOverviewSection = () => {
           transition={{ duration: 0.4, delay: 0.4 }}
           className="mt-10 text-center"
         >
-          <Link to="/features">
+          <Link to="/industries/eye-clinics/features">
             <Button variant="ghost" className="gap-2 text-white/80 hover:bg-white/10 hover:text-white">
               See Everything You Get <ArrowRight className="h-4 w-4" />
             </Button>

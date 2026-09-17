@@ -476,7 +476,7 @@ const EyeClinicFeatures = () => {
                 Talk to us on WhatsApp
               </a>
               <Link
-                to="/demo"
+                to="/signup"
                 className="inline-flex items-center justify-center gap-2 rounded-full border border-primary px-10 py-4 font-bold text-primary transition-colors hover:bg-primary/10"
               >
                 Try demo
